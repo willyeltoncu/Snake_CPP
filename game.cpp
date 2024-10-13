@@ -1,5 +1,4 @@
 #include <snake_class.h>
-#include <iostream>
 using namespace std;
 
 

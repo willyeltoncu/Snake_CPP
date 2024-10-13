@@ -1,3 +1,4 @@
+// #include <iostream>
 #include <iostream>
 
 class Snake {
@@ -6,7 +7,7 @@ private:
     int x, y; // Position of the snake's head
     char direction; // 'U' for up, 'D' for down, 'L' for left, 'R' for right
     int size; // Snake grid will be size x size demension
-    char board[size][size]
+    // char board[size][size];
 
 public:
     // Constructor
@@ -36,17 +37,4 @@ public:
     void display() const {
         std::cout << "Snake Position: (" << x << ", " << y << ")" << std::endl;
     }
-};
-
-int main() {
-    Snake snake(0, 0);
-
-    snake.display();
-    snake.move();
-    snake.changeDirection('D');
-    snake.move();
-
-    snake.display();
-
-    return 0;
-}
+}; 
